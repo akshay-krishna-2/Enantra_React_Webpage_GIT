@@ -1,3 +1,18 @@
+import Carousel from './components/carousel';
+import './slider.css';
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>HELLO</h1>
+//       <Carousel id="slider-1" />
+//       <Carousel id="slider-2" />
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useState } from 'react';
 import './App.css';
 import './slides.css';
@@ -117,12 +132,17 @@ function App() {
       
 
       {/* Container to display Events */}
-      <div class="Events-box" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying} ></div>
+      <div class="Events-box" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying} >
+      <Carousel/>
+      </div>
 
       {/*6DT */}
       <div class="Event_Category" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying}>
         <div class="Event_category_tittle"> 6 Degree Talks</div>
         <div class="Carousel_Placer">
+
+        
+
           <div class="slide">
             
             {/*Slide Image*/}
@@ -184,11 +204,12 @@ function App() {
           
         </div>
       </div>
-      
-
+         
       <div class="Event_Category" >
         <div class="Event_category_tittle"></div>
-        <div class="Carousel_Placer"></div>
+        <div class="Carousel_Placer">
+          
+        </div>
       </div>
 
     </div>
